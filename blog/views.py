@@ -15,13 +15,13 @@ from watson_developer_cloud import LanguageTranslatorV2 as LanguageTranslator
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     tone_analyzer = ToneAnalyzerV3(
-        username='b0460ba6-6b4b-4142-8e1f-e2a2cf90b33f',
-        password='Nv80oZfb4lBb',
+        username='ac3f385e-36c8-4caf-a368-593d7d7e3067',
+        password='itdGDa1gMfEE',
         version='2016-05-19 ')
 
     language_translator = LanguageTranslator(
-        username='b133f5b8-20fb-4889-bb01-1fc432e5edfa',
-        password='XsclbXznfvAv')
+        username='bd4c5ae2-bbac-4b04-a385-595368a98ce1',
+        password='IlCTz8gtnWd6')
 
     # print(json.dumps(translation, indent=2, ensure_ascii=False))
 
